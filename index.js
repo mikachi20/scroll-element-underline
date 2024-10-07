@@ -1,4 +1,4 @@
-const scrollToElementUnderline = function (elementId, duration = 375) {
+export function scrollToElementUnderline(elementId, duration = 375) {
   if (typeof elementId !== 'string' || elementId.trim() === '') {
     console.error('Invalid elementId provided.');
     return;
@@ -32,5 +32,3 @@ const scrollToElementUnderline = function (elementId, duration = 375) {
 
   requestAnimationFrame(animateScroll);
 };
-
-module.exports = scrollToElementUnderline;
